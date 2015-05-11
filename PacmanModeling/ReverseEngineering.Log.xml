@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-04-27T19:51:21" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '9440d0a8-125c-4f12-af1a-ba82c74a5b6e' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '9d6e5275-5141-4abb-a1bf-215852246397' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman' -  (Package)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine' -  (Package)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Behaviour' -  (Enumeration)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Cell' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Medium" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game' -  (Class)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_deltaTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_elapsedTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_gameLogic' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_ghosts' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_isPaused' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_level' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_mainTimer' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_map' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_pacman' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_pacmanCoins' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::_score' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Die' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Dispose' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::ElapsedSeconds' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Game' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::GhostDie' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Ghosts' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::InitializeGame' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::InitializeGhosts' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::InitializeLevel' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::InitializeLogic' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::InitializePacman' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::InitializeTimer' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::IsPaused' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Level' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Logic' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::MainTimer' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::NewGame' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnGhostDie' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnGhostDie::e' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnGhostDie::sender' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnMainTimerTick' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnMainTimerTick::e' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnMainTimerTick::sender' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnNewGame' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnPacmanDie' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnPacmanDie::e' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnPacmanDie::sender' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnPauseGame' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnPlayerWin' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnPlayerWin::e' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnPlayerWin::sender' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::OnUpdateGame' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Pause' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Player' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Score' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::size' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Update' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Game::Win' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameCharacter' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Medium" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic' -  (Class)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::_deltaTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::_ghosts' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::_level' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::_pacman' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GameLogic' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GameLogic::deltaTime' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GameLogic::ghosts' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GameLogic::level' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GameLogic::pacman' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostBehaviourCheck' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostBehaviourCheck::ghost' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostChasing' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostChasing::ghost' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostCollisionCheck' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostCollisionCheck::ghost' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostDie' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostDie::ghost' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostDied' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostFrightened' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostFrightened::ghost' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostPatroling' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostPatroling::ghost' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostReturning' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::GhostReturning::ghost' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::IsPlayerWinner' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::PacmanDie' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::PacmanDied' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::PacmanWinCheck' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::PlayerWin' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::PowerDown' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::PowerUpCheck' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GameLogic::WhilePoweredUp' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Medium" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost' -  (Class)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_algorithm' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_behaviour' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_chasePath' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_chaseTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_distance' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_homeCell' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_isChanging' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_name' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_pacman' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_pathIterator' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_patrolPath' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_patrolTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_returnPath' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_returnTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_runPath' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_startCell' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::_targetCell' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Algorithm' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Behaviour' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::CalculateTargetCell' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Chase' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::ChasePath' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::chasePathLength' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::chaseTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::ChaseTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::DoChasing' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::DoPatroling' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::DoReturning' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::FollowPath' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::FollowPath::path' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::GetDownCell' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::GetLeftCell' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::GetRightCell' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::GetUpCell' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Ghost' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Ghost::grid' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Ghost::pacman' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Ghost::size' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Ghost::x' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Ghost::y' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::HomeCell' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::InitializePatrolPath' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::IsAtStart' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::IsChanging' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::IsDownAvailable' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::IsLeftAvailable' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::IsRightAvailable' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::IsUpAvailable' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::MoveTo' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::MoveTo::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Name' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::PathIterator' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Patrol' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::PatrolPath' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::patrolTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::PatrolTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::ReturnHome' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::ReturnPath' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::returnTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::ReturnTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::Run' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::RunPath' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::runPathLength' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::SelectChasePath' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::SelectChasePath::path' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::StartCell' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::StartChase' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::StartPatrol' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TargetCell' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::ToString' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TryDirectionDown' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TryDirectionDown::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TryDirectionLeft' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TryDirectionLeft::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TryDirectionRight' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TryDirectionRight::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TryDirectionUp' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TryDirectionUp::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::TrySlowerSpeed' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::UpdateChasePath' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::UpdateDirection' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::UpdateDirection::other' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::UpdateRunPath' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Ghost::UpdateRunPath::randomCell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::GhostEventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Medium" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid' -  (Class)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::_cellSize' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::_coins' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::_height' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::_map' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::_width' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::Coins' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::GetRandomFreeCell' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::Grid' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::Grid::mapStructure' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::Grid::size' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::Height' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::Map' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::random' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Grid::Width' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::IPathfindingAlgorithm' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Medium" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player' -  (Class)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::_coins' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::_isPoweredUp' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::_powerUpTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::Coins' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::EatItem' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::IsInCell' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::IsInCell::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::IsPoweredUp' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::OnEatItem' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::PickItem' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::PickItem::ghosts' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::Player' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::Player::grid' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::Player::size' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::Player::x' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::Player::y' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::powerUpTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::PowerUpTime' -  (Property)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::TryPickCoin' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::TryPickCoin::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::TryPickItem' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::TryPickItem::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::TryPickItem::ghosts' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::TryPickPowerUp' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::TryPickPowerUp::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::TryPickPowerUp::ghosts' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::UpdateAfterPickUp' -  (Operation)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::Pacman::GameEngine::Player::UpdateAfterPickUp::cell' -  (Parameter)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System' -  (Package)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Char' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Collections' -  (Package)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Collections::Generic::List&lt;Cell‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Collections::Generic::List&lt;Ghost‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::EventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::EventHandler' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::EventHandler&lt;EventArgs‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::EventHandler&lt;GameLogic‎‎.GhostEventArgs‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::IDisposable' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Random' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Single' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Timers' -  (Package)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'PacmanModeling::System::Timers::Timer' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::Pacman::GameEngine::IPathfindingAlgorithm (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::Pacman::GameEngine::Behaviour (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::System::Collections::Generic::List&lt;Cell‎&gt; (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::System::Single (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::Pacman::GameEngine::Cell (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::System::Collections::Generic::List&lt;Cell‎&gt; (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::System::Single (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::System::Collections::Generic::List&lt;Cell‎&gt; (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::System::Single (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::System::Collections::Generic::List&lt;Cell‎&gt; (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::Pacman::GameEngine::Cell (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::Pacman::GameEngine::Cell (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Ghost to PacmanModeling::Pacman::GameEngine::GameCharacter (Generalization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Grid to PacmanModeling::Pacman::GameEngine::Cell (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Player to PacmanModeling::System::Single (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Player to PacmanModeling::Pacman::GameEngine::GameCharacter (Generalization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Game to PacmanModeling::System::Single (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Game to PacmanModeling::System::Collections::Generic::List&lt;Ghost‎&gt; (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Game to PacmanModeling::Pacman::GameEngine::Grid (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Game to PacmanModeling::Pacman::GameEngine::GameLogic (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Game to PacmanModeling::System::Timers::Timer (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Game to PacmanModeling::Pacman::GameEngine::Player (Association)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Game to PacmanModeling::System::IDisposable (InterfaceRealization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Blinky to PacmanModeling::Pacman::GameEngine::Ghost (Generalization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Clyde to PacmanModeling::Pacman::GameEngine::Ghost (Generalization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Inky to PacmanModeling::Pacman::GameEngine::Ghost (Generalization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Pinky to PacmanModeling::Pacman::GameEngine::Ghost (Generalization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::Cell to PacmanModeling::Pacman::GameEngine::IGameObject (InterfaceRealization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::GameCharacter to PacmanModeling::Pacman::GameEngine::IGameObject (InterfaceRealization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: PacmanModeling::Pacman::GameEngine::GhostEventArgs to PacmanModeling::System::EventArgs (Generalization)" />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="High" Text="(5) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="High" Text="(18) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-04-27T19:51:30" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

@@ -1,6 +1,6 @@
-bin
-obj
-TestResults
-PacmanModeling
+**/bin/
+**/obj/
+**/TestResults/
 *.suo
-*.sln.DotSettings.user
+*.user
+*.dbmdl
