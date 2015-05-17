@@ -11,14 +11,14 @@ namespace Pacman.GameEngine
         public Clyde(Player pacman, Grid grid, int x, int y, float size)
             : base(pacman, grid, x, y, size)
         {
-            _name = "Clyde";
+            Name = "Clyde";
         }
 
         public override void InitializePatrolPath()
         {
-            PatrolPath = _algorithm.CalculatePath(StartCell, _level.Map[8, 27], _level.Map);
-            PatrolPath.AddRange(_algorithm.CalculatePath(_level.Map[8, 27], _level.Map[12, 30], _level.Map));
-            PatrolPath.AddRange(_algorithm.CalculatePath(_level.Map[12, 30], StartCell, _level.Map));
+            PatrolPath = Algorithm.CalculatePath(StartCell, Level.Map[8, 27], Level.Map);
+            PatrolPath.AddRange(Algorithm.CalculatePath(Level.Map[8, 27], Level.Map[12, 30], Level.Map));
+            PatrolPath.AddRange(Algorithm.CalculatePath(Level.Map[12, 30], StartCell, Level.Map));
         }
 
         #endregion
@@ -29,8 +29,8 @@ namespace Pacman.GameEngine
         {
             int xDistance, yDistance, distance;
 
-            xDistance = Math.Abs(GetX() - _pacman.GetX());
-            yDistance = Math.Abs(GetY() - _pacman.GetY());
+            xDistance = Math.Abs(GetX() - Pacman.GetX());
+            yDistance = Math.Abs(GetY() - Pacman.GetY());
             distance = xDistance + yDistance;
 
             if (distance > 8)
@@ -45,12 +45,12 @@ namespace Pacman.GameEngine
 
         public void UseStupidPath()
         {
-            List<Cell> bestPath = _algorithm.CalculatePath(CurrentCell(), _level.GetRandomFreeCell(), _level.Map);
-            _pathIterator = 0;
+            List<Cell> bestPath = Algorithm.CalculatePath(CurrentCell(), Level.GetRandomFreeCell(), Level.Map);
+            PathIterator = 0;
 
             SelectChasePath(bestPath);
 
-            _targetCell = _chasePath.Last();
+            TargetCell = ChasePath.Last();
         }
 
         #endregion

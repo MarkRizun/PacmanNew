@@ -13,7 +13,7 @@ namespace Pacman.GameEngine
         #region Fields
 
         private const int RUN_PATH_LENGTH = 5;
-        protected const int CHASE_PATH_LENGTH = 3;
+        private const int CHASE_PATH_LENGTH = 3;
 
         private const float CHASE_TIME = 20.0f;
         private const float PATROL_TIME = 7.0f;
@@ -25,24 +25,24 @@ namespace Pacman.GameEngine
 
         private List<Cell> _patrolPath;
         private List<Cell> _runPath;
-        protected List<Cell> _chasePath;
+        private List<Cell> _chasePath;
         private List<Cell> _returnPath;
 
-        protected int _pathIterator;
+        private int _pathIterator;
         private Cell _homeCell;
         private Cell _startCell;
-        protected Cell _targetCell;
-        protected int _distance;
+        private Cell _targetCell;
+        private int _distance;
 
         private Behaviour _behaviour;
 
         private bool _isChanging;
 
-        protected string _name;
+        private string _name;
 
-        protected Player _pacman;
+        private Player _pacman;
 
-        protected IPathfindingAlgorithm _algorithm;
+        private IPathfindingAlgorithm _algorithm;
 
         #endregion
 
@@ -210,6 +210,10 @@ namespace Pacman.GameEngine
             {
                 return _name;
             }
+            set
+            {
+                _name = value;
+            }
         }
 
         public IPathfindingAlgorithm Algorithm
@@ -217,6 +221,34 @@ namespace Pacman.GameEngine
             get
             {
                 return _algorithm;
+            }
+        }
+
+        public int ChasePathLength
+        {
+            get
+            {
+                return CHASE_PATH_LENGTH;
+            }
+        }
+
+        public int Distance
+        {
+            get
+            {
+                return _distance;
+            }
+            set
+            {
+                _distance = value;
+            }
+        }
+
+        public Player Pacman
+        {
+            get
+            {
+                return _pacman;
             }
         }
 
@@ -240,10 +272,10 @@ namespace Pacman.GameEngine
         public Ghost(Grid grid, int x, int y, float size)
             : this(grid, size)
         {
-            _otherSpeed = _fullSpeed / 2.0f;
+            OtherSpeed = FullSpeed / 2.0f;
             SetX(x);
             SetY(y);
-            _homeCell = _level.Map[x - 1, y - 1];
+            _homeCell = Level.Map[x - 1, y - 1];
         }
 
         public Ghost(Player pacman, Grid grid, int x, int y, float size)
@@ -325,8 +357,8 @@ namespace Pacman.GameEngine
             }
             else
             {
-                _direction = Direction.None;
-                _speed = _fullSpeed;
+                Direction = Direction.None;
+                Speed = FullSpeed;
                 return true;
             }
         }
@@ -335,7 +367,7 @@ namespace Pacman.GameEngine
         {
             if (_behaviour == Behaviour.Frightened)
             {
-                _speed = _otherSpeed;
+                Speed = OtherSpeed;
             }
         }
 
@@ -350,7 +382,7 @@ namespace Pacman.GameEngine
 
         public bool IsDownAvailable()
         {
-            return _pacman.GetY() + _distance < _level.Height - 1;
+            return _pacman.GetY() + _distance < Level.Height - 1;
         }
 
         public bool IsLeftAvailable()
@@ -360,7 +392,7 @@ namespace Pacman.GameEngine
 
         public bool IsRightAvailable()
         {
-            return _pacman.GetX() + _distance < _level.Width - 1;
+            return _pacman.GetX() + _distance < Level.Width - 1;
         }
 
         #endregion
@@ -391,7 +423,7 @@ namespace Pacman.GameEngine
         {
             if (cell.GetBoundingRect().Top < this.GetBoundingRect().Top)
             {
-                _direction = Direction.Up;
+                Direction = Direction.Up;
             }
         }
 
@@ -399,7 +431,7 @@ namespace Pacman.GameEngine
         {
             if (cell.GetBoundingRect().Top > this.GetBoundingRect().Top)
             {
-                _direction = Direction.Down;
+                Direction = Direction.Down;
             }
         }
 
@@ -407,7 +439,7 @@ namespace Pacman.GameEngine
         {
             if (cell.GetBoundingRect().Left < this.GetBoundingRect().Left)
             {
-                _direction = Direction.Left;
+                Direction = Direction.Left;
             }
         }
 
@@ -415,7 +447,7 @@ namespace Pacman.GameEngine
         {
             if (cell.GetBoundingRect().Left > this.GetBoundingRect().Left)
             {
-                _direction = Direction.Right;
+                Direction = Direction.Right;
             }
         }
 
@@ -448,7 +480,7 @@ namespace Pacman.GameEngine
 
             #endregion
 
-            List<Cell> bestPath = _algorithm.CalculatePath(CurrentCell(), randomCell, _level.Map);
+            List<Cell> bestPath = _algorithm.CalculatePath(CurrentCell(), randomCell, Level.Map);
             PathIterator = 0;
 
             if (bestPath.Count >= RUN_PATH_LENGTH)
@@ -465,7 +497,7 @@ namespace Pacman.GameEngine
 
         public virtual void UpdateChasePath()
         {
-            List<Cell> bestPath = _algorithm.CalculatePath(CurrentCell(), CalculateTargetCell(), _level.Map);
+            List<Cell> bestPath = _algorithm.CalculatePath(CurrentCell(), CalculateTargetCell(), Level.Map);
             _pathIterator = 0;
 
             SelectChasePath(bestPath);
@@ -481,7 +513,7 @@ namespace Pacman.GameEngine
             }
             else
             {
-                _returnPath = _algorithm.CalculatePath(CurrentCell(), _startCell, _level.Map);
+                _returnPath = _algorithm.CalculatePath(CurrentCell(), _startCell, Level.Map);
                 _behaviour = Behaviour.Return;
             }
         }
@@ -544,22 +576,22 @@ namespace Pacman.GameEngine
 
         protected Cell GetUpCell()
         {
-            return _level.Map[_pacman.GetX(), _pacman.GetY() - _distance];
+            return Level.Map[_pacman.GetX(), _pacman.GetY() - _distance];
         }
 
         protected Cell GetDownCell()
         {
-            return _level.Map[_pacman.GetX(), _pacman.GetY() + _distance];
+            return Level.Map[_pacman.GetX(), _pacman.GetY() + _distance];
         }
 
         protected Cell GetLeftCell()
         {
-            return _level.Map[_pacman.GetX() - _distance, _pacman.GetY()];
+            return Level.Map[_pacman.GetX() - _distance, _pacman.GetY()];
         }
 
         protected Cell GetRightCell()
         {
-            return _level.Map[_pacman.GetX() + _distance, _pacman.GetY()];
+            return Level.Map[_pacman.GetX() + _distance, _pacman.GetY()];
         }
 
         #endregion

@@ -31,15 +31,15 @@
         public Inky(Player pacman, Grid grid, int x, int y, float size)
             : base(pacman, grid, x, y, size)
         {
-            _name = "Inky";
-            _distance = 2;
+            Name = "Inky";
+            Distance = 2;
         }
 
         public override void InitializePatrolPath()
         {
-            PatrolPath = _algorithm.CalculatePath(StartCell, _level.Map[21, 27], _level.Map);
-            PatrolPath.AddRange(_algorithm.CalculatePath(_level.Map[21, 27], _level.Map[23, 30], _level.Map));
-            PatrolPath.AddRange(_algorithm.CalculatePath(_level.Map[23, 30], StartCell, _level.Map));
+            PatrolPath = Algorithm.CalculatePath(StartCell, Level.Map[21, 27], Level.Map);
+            PatrolPath.AddRange(Algorithm.CalculatePath(Level.Map[21, 27], Level.Map[23, 30], Level.Map));
+            PatrolPath.AddRange(Algorithm.CalculatePath(Level.Map[23, 30], StartCell, Level.Map));
         }
 
         #endregion
@@ -51,12 +51,12 @@
             Cell offsetCell = CalculateOffsetCell();
             Cell cell;
 
-            _xDistance = _pacman.GetX() - _blinky.GetX();
-            _yDistance = _pacman.GetY() - _blinky.GetY();
+            _xDistance = Pacman.GetX() - _blinky.GetX();
+            _yDistance = Pacman.GetY() - _blinky.GetY();
 
             TargetInBounds();
 
-            cell = _level.Map[_pacman.GetX() + _xDistance, _pacman.GetY() + _yDistance];
+            cell = Level.Map[Pacman.GetX() + _xDistance, Pacman.GetY() + _yDistance];
 
             return TargetEmpty(cell);
         }
@@ -68,7 +68,7 @@
 
             while (offsetCell.IsWall())
             {
-                switch (_pacman.Direction)
+                switch (Pacman.Direction)
                 {
                     case Direction.Up: offsetCell = GetUpCell();
                         break;
@@ -90,17 +90,17 @@
                             }
                             break;
                         }
-                    default: offsetCell = _pacman.CurrentCell();
+                    default: offsetCell = Pacman.CurrentCell();
                         break;
                 }
 
-                if (_distance == 0)
+                if (Distance == 0)
                 {
-                    offsetCell = _pacman.CurrentCell();
+                    offsetCell = Pacman.CurrentCell();
                     break;
                 }
 
-                _distance--;
+                Distance--;
             }
 
             return offsetCell;
@@ -119,7 +119,7 @@
 
         private void LeftBoundShift()
         {
-            while (_pacman.GetX() + _xDistance < 0)
+            while (Pacman.GetX() + _xDistance < 0)
             {
                 _xDistance++;
             }
@@ -127,7 +127,7 @@
 
         private void RightBoundShift()
         {
-            while (_pacman.GetX() + _xDistance > _level.Width - 1)
+            while (Pacman.GetX() + _xDistance > Level.Width - 1)
             {
                 _xDistance--;
             }
@@ -135,7 +135,7 @@
 
         private void DownBoundShift()
         {
-            while (_pacman.GetY() + _yDistance < 0)
+            while (Pacman.GetY() + _yDistance < 0)
             {
                 _yDistance++;
             }
@@ -143,7 +143,7 @@
 
         private void UpBoundShift()
         {
-            while (_pacman.GetY() + _yDistance > _level.Height - 1)
+            while (Pacman.GetY() + _yDistance > Level.Height - 1)
             {
                 _yDistance--;
             }
@@ -182,9 +182,9 @@
         private bool IsShiftedInBounds(Cell cell)
         {
             return cell.GetX() + _xShift > 0 &&
-                   cell.GetX() + _xShift < _level.Width &&
+                   cell.GetX() + _xShift < Level.Width &&
                    cell.GetY() + _yShift > 0 &&
-                   cell.GetY() + _yShift < _level.Height;
+                   cell.GetY() + _yShift < Level.Height;
         }
 
         private int CalculateUpperBound(int count)
@@ -209,7 +209,7 @@
 
         private void ShiftCell(ref Cell cell)
         {
-            cell = _level.Map[cell.GetX() + _xShift, cell.GetY() + _yShift];
+            cell = Level.Map[cell.GetX() + _xShift, cell.GetY() + _yShift];
         }
 
         #endregion

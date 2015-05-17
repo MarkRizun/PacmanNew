@@ -78,7 +78,7 @@ namespace Pacman.GameEngine
 
             #endregion
 
-            _level = grid;
+            Level = grid;
         }
 
         public Player(Grid grid, int x, int y, float size)
@@ -93,7 +93,7 @@ namespace Pacman.GameEngine
 
             #endregion
 
-            _size = size;
+            Size = size;
             SetX(x);
             SetY(y);
         }
@@ -131,7 +131,7 @@ namespace Pacman.GameEngine
 
             #endregion
 
-            TryPickItem(_level.Map[GetX(), GetY()], ghosts);
+            TryPickItem(Level.Map[GetX(), GetY()], ghosts);
         }
 
         private void TryPickItem(Cell cell, List<Ghost> ghosts)

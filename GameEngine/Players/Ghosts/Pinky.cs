@@ -7,15 +7,15 @@
         public Pinky(Player pacman, Grid grid, int x, int y, float size)
             : base(pacman, grid, x, y, size)
         {
-            _name = "Pinky";
-            _distance = 3;
+            Name = "Pinky";
+            Distance = 3;
         }
 
         public override void InitializePatrolPath()
         {
-            PatrolPath = _algorithm.CalculatePath(StartCell, _level.Map[8, 6], _level.Map);
-            PatrolPath.AddRange(_algorithm.CalculatePath(_level.Map[8, 6], _level.Map[4, 6], _level.Map));
-            PatrolPath.AddRange(_algorithm.CalculatePath(_level.Map[4, 6], StartCell, _level.Map));
+            PatrolPath = Algorithm.CalculatePath(StartCell, Level.Map[8, 6], Level.Map);
+            PatrolPath.AddRange(Algorithm.CalculatePath(Level.Map[8, 6], Level.Map[4, 6], Level.Map));
+            PatrolPath.AddRange(Algorithm.CalculatePath(Level.Map[4, 6], StartCell, Level.Map));
         }
 
         #endregion
@@ -29,7 +29,7 @@
 
             while (cell.IsWall())
             {
-                switch (_pacman.Direction)
+                switch (Pacman.Direction)
                 {
                     case Direction.Up:
                         {
@@ -63,16 +63,16 @@
                             }
                             break;
                         }
-                    default: return _pacman.CurrentCell();
+                    default: return Pacman.CurrentCell();
                 }
 
-                if (_distance <= 1)
+                if (Distance <= 1)
                 {
-                    cell = _pacman.CurrentCell();
+                    cell = Pacman.CurrentCell();
                     break;
                 }
 
-                _distance--;
+                Distance--;
             }
 
             return cell;

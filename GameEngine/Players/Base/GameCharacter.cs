@@ -6,35 +6,63 @@ namespace Pacman.GameEngine
 
     public abstract class GameCharacter : IGameObject
     {
-        #region Protected fields
+        #region Fields
 
-        protected const float EPSILON = 0.001f;
+        private const float EPSILON = 0.001f;
 
-        protected float _xPos;
-        protected float _yPos;
-        protected float _size;
-        protected float _speed;
-        protected float _fullSpeed;
-        protected float _otherSpeed;
+        private float _xPos;
+        private float _yPos;
+        private float _size;
+        private float _speed;
+        private float _fullSpeed;
+        private float _otherSpeed;
 
-        protected bool _isPassedRightTunnel;
-        protected bool _isPassedLeftTunnel;
+        private bool _isPassedRightTunnel;
+        private bool _isPassedLeftTunnel;
 
-        protected Grid _level;
+        private Grid _level;
 
-        protected Direction _direction;
-        protected Direction _previousDirection;
-        protected Direction _pendingDirection;
+        private Direction _direction;
+        private Direction _previousDirection;
+        private Direction _pendingDirection;
 
         #endregion
 
         #region Properies
+
+        public float XPos
+        {
+            get
+            {
+                return _xPos;
+            }
+            set
+            {
+                _xPos = value;
+            }
+        }
+
+        public float YPos
+        {
+            get
+            {
+                return _yPos;
+            }
+            set
+            {
+                _yPos = value;
+            }
+        }
 
         public float Size
         {
             get
             {
                 return _size;
+            }
+            set
+            {
+                _size = value;
             }
         }
 
@@ -47,6 +75,30 @@ namespace Pacman.GameEngine
             set
             {
                 _speed = value;
+            }
+        }
+
+        public float FullSpeed
+        {
+            get
+            {
+                return _fullSpeed;
+            }
+            set
+            {
+                _fullSpeed = value;
+            }
+        }
+
+        public float OtherSpeed
+        {
+            get
+            {
+                return _otherSpeed;
+            }
+            set
+            {
+                _otherSpeed = value;
             }
         }
 
@@ -107,6 +159,26 @@ namespace Pacman.GameEngine
             set
             {
                 _isPassedLeftTunnel = value;
+            }
+        }
+
+        public float Epsilon
+        {
+            get
+            {
+                return EPSILON;
+            }
+        }
+
+        public Grid Level
+        {
+            get
+            {
+                return _level;
+            }
+            set
+            {
+                _level = value;
             }
         }
 

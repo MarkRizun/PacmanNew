@@ -110,8 +110,7 @@ namespace Pacman.GameEngine
         private void InitializeLevel()
         {
             string levelStruct = Pacman.GameEngine.Properties.Resources.mainLevel;
-            //string[] lines = levelStruct.Split(new char[] {'\n'});
-            string[] lines = levelStruct.Replace("\r\n", " ").Split(new char[] { ' ' });
+            string[] lines = levelStruct.Split(new char[] {'\n'});
             _map = new char[lines.Length, lines[0].Length];
 
             for (int i = 0; i < lines.Length; i++)

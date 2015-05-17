@@ -9,14 +9,14 @@ namespace Pacman.GameEngine
         public Blinky(Player pacman, Grid grid, int x, int y, float size)
             : base(pacman, grid, x, y, size)
         {
-            _name = "Blinky";
+            Name = "Blinky";
         }
 
         public override void InitializePatrolPath()
         {
-            PatrolPath = _algorithm.CalculatePath(StartCell, _level.Map[24, 6], _level.Map);
-            PatrolPath.AddRange(_algorithm.CalculatePath(_level.Map[24, 6], _level.Map[28, 6], _level.Map));
-            PatrolPath.AddRange(_algorithm.CalculatePath(_level.Map[28, 6], StartCell, _level.Map));
+            PatrolPath = Algorithm.CalculatePath(StartCell, Level.Map[24, 6], Level.Map);
+            PatrolPath.AddRange(Algorithm.CalculatePath(Level.Map[24, 6], Level.Map[28, 6], Level.Map));
+            PatrolPath.AddRange(Algorithm.CalculatePath(Level.Map[28, 6], StartCell, Level.Map));
         }
 
         #endregion
@@ -32,33 +32,33 @@ namespace Pacman.GameEngine
 
         private void CheckTunnel()
         {
-            if (_pacman.IsPassedRightTunnel)
+            if (Pacman.IsPassedRightTunnel)
             {
                 ChaseRightTunnel();
             }
             else
-                if (_pacman.IsPassedLeftTunnel)
+                if (Pacman.IsPassedLeftTunnel)
                 {
                     ChaseLeftTunnel();
                 }
                 else
                 {
-                    _targetCell = _chasePath.Last();
+                    TargetCell = ChasePath.Last();
                 }
         }
 
         private void ChaseLeftTunnel()
         {
-            _chasePath = _algorithm.CalculatePath(CurrentCell(), _level.Map[0, 15], _level.Map);
-            _targetCell = _level.Map[32, 15];
-            _pacman.IsPassedLeftTunnel = false;
+            ChasePath = Algorithm.CalculatePath(CurrentCell(), Level.Map[0, 15], Level.Map);
+            TargetCell = Level.Map[32, 15];
+            Pacman.IsPassedLeftTunnel = false;
         }
 
         private void ChaseRightTunnel()
         {
-            _chasePath = _algorithm.CalculatePath(CurrentCell(), _level.Map[33, 15], _level.Map);
-            _targetCell = _level.Map[0, 15];
-            _pacman.IsPassedRightTunnel = false;
+            ChasePath = Algorithm.CalculatePath(CurrentCell(), Level.Map[33, 15], Level.Map);
+            TargetCell = Level.Map[0, 15];
+            Pacman.IsPassedRightTunnel = false;
         }
 
         #endregion
