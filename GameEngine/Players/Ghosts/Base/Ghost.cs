@@ -12,12 +12,12 @@ namespace Pacman.GameEngine
     {
         #region Fields
 
-        private const int runPathLength = 5;
-        protected const int chasePathLength = 3;
+        private const int RUN_PATH_LENGTH = 5;
+        protected const int CHASE_PATH_LENGTH = 3;
 
-        private const float chaseTime = 20.0f;
-        private const float patrolTime = 7.0f;
-        private const float returnTime = 7.0f;
+        private const float CHASE_TIME = 20.0f;
+        private const float PATROL_TIME = 7.0f;
+        private const float RETURN_TIME = 7.0f;
 
         private float _patrolTime;
         private float _chaseTime;
@@ -229,9 +229,9 @@ namespace Pacman.GameEngine
         {
             _pathIterator = 0;
             _behaviour = Behaviour.Patrol;
-            _patrolTime = patrolTime;
-            _chaseTime = chaseTime;
-            _returnTime = returnTime;
+            _patrolTime = PATROL_TIME;
+            _chaseTime = CHASE_TIME;
+            _returnTime = RETURN_TIME;
             _chasePath = new List<Cell>();
 
             _algorithm = new AStarAlgorithm();
@@ -432,7 +432,7 @@ namespace Pacman.GameEngine
             else
             {
                 _targetCell = CurrentCell();
-                _chaseTime = chaseTime;
+                _chaseTime = CHASE_TIME;
                 _behaviour = Behaviour.Chase;
             }
         }
@@ -451,9 +451,9 @@ namespace Pacman.GameEngine
             List<Cell> bestPath = _algorithm.CalculatePath(CurrentCell(), randomCell, _level.Map);
             PathIterator = 0;
 
-            if (bestPath.Count >= runPathLength)
+            if (bestPath.Count >= RUN_PATH_LENGTH)
             {
-                _runPath = bestPath.GetRange(0, runPathLength);
+                _runPath = bestPath.GetRange(0, RUN_PATH_LENGTH);
             }
             else
             {
@@ -513,9 +513,9 @@ namespace Pacman.GameEngine
 
         protected void SelectChasePath(List<Cell> path)
         {
-            if (path.Count >= chasePathLength)
+            if (path.Count >= CHASE_PATH_LENGTH)
             {
-                _chasePath = path.GetRange(0, chasePathLength);
+                _chasePath = path.GetRange(0, CHASE_PATH_LENGTH);
             }
             else
             {
@@ -526,14 +526,14 @@ namespace Pacman.GameEngine
         private void StartChase()
         {
             _targetCell = CurrentCell();
-            _chaseTime = chaseTime;
+            _chaseTime = CHASE_TIME;
             _behaviour = Behaviour.Chase;
         }
 
         private void StartPatrol()
         {
             _pathIterator = 0;
-            _patrolTime = patrolTime;
+            _patrolTime = PATROL_TIME;
             _behaviour = Behaviour.Patrol;
         }
 

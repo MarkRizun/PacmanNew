@@ -8,7 +8,7 @@ namespace Pacman.GameEngine
     {
         #region Protected fields
 
-        protected const float _epsilon = 0.001f;
+        protected const float EPSILON = 0.001f;
 
         protected float _xPos;
         protected float _yPos;
@@ -346,9 +346,9 @@ namespace Pacman.GameEngine
         protected bool CanMoveUp()
         {
             int xTemp1, xTemp2, yTemp;
-            xTemp1 = (int)((GetLeft() + _epsilon) / _size);
-            xTemp2 = (int)((GetRight() - _epsilon) / _size);
-            yTemp = (int)((_yPos / _size) - _epsilon) - 1;
+            xTemp1 = (int)((GetLeft() + EPSILON) / _size);
+            xTemp2 = (int)((GetRight() - EPSILON) / _size);
+            yTemp = (int)((_yPos / _size) - EPSILON) - 1;
 
             if (xTemp1 >= 0 && xTemp1 < _level.Width &&
                 yTemp >= 0 && yTemp < _level.Height &&
@@ -367,9 +367,9 @@ namespace Pacman.GameEngine
         protected bool CanMoveDown()
         {
             int xTemp1, xTemp2, yTemp;
-            xTemp1 = (int)((GetLeft() + _epsilon) / _size);
-            xTemp2 = (int)((GetRight() - _epsilon) / _size);
-            yTemp = (int)((_yPos / _size) + _epsilon);
+            xTemp1 = (int)((GetLeft() + EPSILON) / _size);
+            xTemp2 = (int)((GetRight() - EPSILON) / _size);
+            yTemp = (int)((_yPos / _size) + EPSILON);
 
             if (xTemp1 >= 0 && xTemp1 < _level.Width &&
                 yTemp >= 0 && yTemp < _level.Height &&
@@ -388,9 +388,9 @@ namespace Pacman.GameEngine
         protected bool CanMoveLeft()
         {
             int yTemp1, yTemp2, xTemp;
-            yTemp1 = (int)((GetTop() + _epsilon) / _size);
-            yTemp2 = (int)((GetBottom() - _epsilon) / _size);
-            xTemp = (int)((_xPos / _size) - _epsilon);
+            yTemp1 = (int)((GetTop() + EPSILON) / _size);
+            yTemp2 = (int)((GetBottom() - EPSILON) / _size);
+            xTemp = (int)((_xPos / _size) - EPSILON);
 
             if (yTemp1 >= 0 && yTemp1 < _level.Height &&
                 xTemp > 0 && xTemp <= _level.Width &&
@@ -409,9 +409,9 @@ namespace Pacman.GameEngine
         protected bool CanMoveRight()
         {
             int yTemp1, yTemp2, xTemp;
-            yTemp1 = (int)((GetTop() + _epsilon) / _size);
-            yTemp2 = (int)((GetBottom() - _epsilon) / _size);
-            xTemp = (int)((_xPos / _size) + _epsilon);
+            yTemp1 = (int)((GetTop() + EPSILON) / _size);
+            yTemp2 = (int)((GetBottom() - EPSILON) / _size);
+            xTemp = (int)((_xPos / _size) + EPSILON);
 
             if (yTemp1 >= 0 && yTemp1 < _level.Height &&
                 xTemp >= 0 && xTemp < _level.Width &&

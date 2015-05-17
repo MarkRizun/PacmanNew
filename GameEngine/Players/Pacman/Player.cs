@@ -12,7 +12,7 @@ namespace Pacman.GameEngine
     {
         #region Fields
 
-        private const float powerUpTime = 5.0f;
+        private const float POWER_UP_TIME = 5.0f;
 
         private int _coins;
         private bool _isPoweredUp;
@@ -171,7 +171,7 @@ namespace Pacman.GameEngine
                 }
 
                 _isPoweredUp = true;
-                PowerUpTime = powerUpTime;
+                PowerUpTime = POWER_UP_TIME;
             }
         }
 

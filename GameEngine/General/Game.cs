@@ -8,7 +8,7 @@ namespace Pacman.GameEngine
     {
         #region Fields
 
-        private const float size = 20;
+        private const float SIZE = 20;
 
         private bool _isPaused;
         private float _elapsedTime;
@@ -110,7 +110,8 @@ namespace Pacman.GameEngine
         private void InitializeLevel()
         {
             string levelStruct = Pacman.GameEngine.Properties.Resources.mainLevel;
-            string[] lines = levelStruct.Split(new char[] {'\n'});
+            //string[] lines = levelStruct.Split(new char[] {'\n'});
+            string[] lines = levelStruct.Replace("\r\n", " ").Split(new char[] { ' ' });
             _map = new char[lines.Length, lines[0].Length];
 
             for (int i = 0; i < lines.Length; i++)
@@ -121,21 +122,21 @@ namespace Pacman.GameEngine
                 }
             }
 
-            _level = new Grid(_map, size);
+            _level = new Grid(_map, SIZE);
         }
 
         private void InitializePacman()
         {
-            _pacman = new Player(_level, 17, 25, size);
+            _pacman = new Player(_level, 17, 25, SIZE);
         }
 
         private void InitializeGhosts()
         {
             _ghosts = new List<Ghost>();
-            _ghosts.Add(new Blinky(_pacman, _level, 18, 15, size));
-            _ghosts.Add(new Pinky(_pacman, _level, 17, 15, size));
-            _ghosts.Add(new Inky(_pacman, _level, 18, 14, size));
-            _ghosts.Add(new Clyde(_pacman, _level, 17, 14, size));
+            _ghosts.Add(new Blinky(_pacman, _level, 18, 15, SIZE));
+            _ghosts.Add(new Pinky(_pacman, _level, 17, 15, SIZE));
+            _ghosts.Add(new Inky(_pacman, _level, 18, 14, SIZE));
+            _ghosts.Add(new Clyde(_pacman, _level, 17, 14, SIZE));
 
             _ghosts[0].StartCell = _level.Map[27, 2];
             _ghosts[1].StartCell = _level.Map[6, 2];
