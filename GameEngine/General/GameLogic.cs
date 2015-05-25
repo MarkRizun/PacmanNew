@@ -240,6 +240,9 @@ namespace Pacman.GameEngine
 
         #region GhostEventArgs
 
+        /*
+         * ВВ: на мою думку, це клас слід реалізувати в окремому файлі
+         */
         public class GhostEventArgs : EventArgs
         {
             public Ghost Ghost { get; set; }

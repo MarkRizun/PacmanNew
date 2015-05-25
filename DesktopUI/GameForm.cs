@@ -25,7 +25,11 @@ namespace Pacman.DesktopUI
         public GameForm()
         {
             InitializeComponent();
-            System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
+            /*
+             * ВВ: значення false приховує звернення до графічного інтерфейсу з паралельного потоку.
+             * Звернення до графічного інтерфейсу з параельного потоку слід реалізовувати через діспатчер.
+             */
+            System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = true;
         }
 
         #endregion
@@ -77,7 +81,14 @@ namespace Pacman.DesktopUI
             _game = new Game();
             
             _game.IsPaused = false;
-            menu.Visible = false;
+            /*
+              * ВВ: доступ до графічного інтерфейсу з паралельного потоку
+              */
+            Action d = () =>
+            {
+                menu.Visible = _game.IsPaused;
+            };
+            this.Invoke(d);
             _game.MainTimer.Enabled = true;
             
             Paint += Draw;
@@ -88,13 +99,27 @@ namespace Pacman.DesktopUI
 
         private void OnPause(object sender, EventArgs e)
          {
-            menu.Visible = _game.IsPaused;
+             /*
+              * ВВ: доступ до графічного інтерфейсу з паралельного потоку
+              */
+             Action d = () =>
+             {
+                 menu.Visible = _game.IsPaused;
+             };
+             this.Invoke(d);
          }
 
         private void OnUpdate(object sender, EventArgs e)
         {
-            countLabel.Text = _game.Score.ToString();
-            Refresh();
+            /*
+             * ВВ: доступ до графічного інтерфейсу з паралельного потоку
+             */
+            Action d = () =>
+                {
+                    countLabel.Text = _game.Score.ToString();
+                    this.Refresh();
+                };
+            this.Invoke(d);
         }
 
         private void OnWin(object sender, EventArgs e)
@@ -119,6 +144,11 @@ namespace Pacman.DesktopUI
 
         #endregion
 
+        /*
+         * ВВ: для підтримки єдиного стилю написання коду
+         * ці функції також слід вязти в регіон.
+         * Регіон, наприклад, можна назвати "Helpers"
+         */
         private void GameSubscribe()
         {
             _game.Update += OnUpdate;
