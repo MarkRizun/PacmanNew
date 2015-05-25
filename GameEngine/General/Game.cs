@@ -110,7 +110,13 @@ namespace Pacman.GameEngine
         private void InitializeLevel()
         {
             string levelStruct = Pacman.GameEngine.Properties.Resources.mainLevel;
-            string[] lines = levelStruct.Split(new char[] {'\n'});
+            /*
+             * ВВ: 
+             * розбивання файлу з мапою на рядки відбувалося невірно,
+             * оскільки закінченням рядка у даному файлі служать 2 символи "\r\n",
+             * а не один "\n"
+             */
+            string[] lines = levelStruct.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
             _map = new char[lines.Length, lines[0].Length];
 
             for (int i = 0; i < lines.Length; i++)
@@ -126,17 +132,28 @@ namespace Pacman.GameEngine
 
         private void InitializePacman()
         {
+            /*
+             * ВВ: константи слід зберігати у файлі карти, 
+             * оскільки вони залежать від структури кон карти
+             */
             _pacman = new Player(_level, 17, 25, SIZE);
         }
 
         private void InitializeGhosts()
         {
             _ghosts = new List<Ghost>();
+            /*
+             * ВВ: константи слід зберігати у файлі карти, 
+             * оскільки вони залежать від структури кон карти
+             */
             _ghosts.Add(new Blinky(_pacman, _level, 18, 15, SIZE));
             _ghosts.Add(new Pinky(_pacman, _level, 17, 15, SIZE));
             _ghosts.Add(new Inky(_pacman, _level, 18, 14, SIZE));
             _ghosts.Add(new Clyde(_pacman, _level, 17, 14, SIZE));
-
+            /*
+             * ВВ: константи слід зберігати у файлі карти, 
+             * оскільки вони залежать від структури кон карти
+             */
             _ghosts[0].StartCell = _level.Map[27, 2];
             _ghosts[1].StartCell = _level.Map[6, 2];
             _ghosts[2].StartCell = _level.Map[27, 27];
@@ -196,7 +213,10 @@ namespace Pacman.GameEngine
         #endregion
 
         #region Events
-
+        /*
+         * ВВ: немає потреби використовувати EventHandler<EventArgs>,
+         * оскільки EventHandler без параметрів використовує EventArgs
+         */
         public event EventHandler<EventArgs> Update;
 
         public event EventHandler<EventArgs> Pause;
